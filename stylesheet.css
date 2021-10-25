@@ -1,0 +1,86 @@
+:root{
+    --davys-grey: #595959;
+    --grey-web: #7F7F7F;
+    --quick-silver: #A5A5A5;
+    --light-gray: #CCCCCC;
+    --cultured: #F2F2F2;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Rubik', sans-serif;
+}
+
+/* admin login*/
+
+#container{
+    display: flex;
+    background-color: var(--grey-web);
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    /* flex-flow: column; */
+
+}
+
+#wrapper{
+    display: flex;
+    align-items: flex-start;
+    background-color: var(--light-gray);
+    height: 300px;
+    width: 600px;
+    border-radius: 5px;
+    box-shadow: 0 10px 6px -6px;
+}
+
+#loginForm{
+    background-color: var(--cultured);
+    height: 100%;
+    width: 300px;
+}
+
+#loginForm h1{
+    /* background-color: red; */
+    padding: 35px 35px 0 35px;
+    margin: 0;
+    font-weight: 500;
+    display: block;
+}
+
+#loginForm span{
+    /* background-color: blue; */
+    margin: 0;
+    padding-left: 35px;
+    padding-top: 5px;
+    font-size: 14px;
+    display: block;
+    /* font-style: italic; */
+}
+
+#inputField{
+    /* background-color: blueviolet; */
+    padding-left: 35px;
+    padding-right: 35px;
+    margin-top: 30px;
+}
+
+#inputField input{
+    background-color: var(--cultured);
+    width: 100%;
+    display: block;
+    outline: none;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: 0;
+    border-radius: 5px;
+    border-bottom: 1px solid #747474;
+    font-family: 'Rubik', sans-serif;
+    font-size: 14px;
+}
+
+#logoCompany{
+    height: 100%;
+    width: 300px;
+    background-color: blue;
+}
