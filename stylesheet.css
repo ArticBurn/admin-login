@@ -16,12 +16,11 @@ body{
 
 #container{
     display: flex;
-    background-color: var(--grey-web);
+    background-color: var(--light-gray);
     height: 100vh;
     justify-content: center;
     align-items: center;
-    /* flex-flow: column; */
-
+    flex-flow: column;
 }
 
 #wrapper{
@@ -83,4 +82,39 @@ body{
     height: 100%;
     width: 300px;
     background-color: blue;
+}
+
+#credit{
+    /* background-color: aqua; */
+    display: block;
+    margin-top: 20px;
+    padding: 0;
+    text-align: center;
+    color: var(--davys-grey);
+}
+
+#credit p{
+    padding: 0;
+    margin: 0;
+}
+
+#credit a{
+    text-decoration: none;
+    outline: none;
+    color: var(--davys-grey);
+    transition: 0.2s;
+    font-weight: 800;
+}
+
+#credit a:visited{
+    color: var(--davys-grey);
+}
+
+#credit a:hover{
+    color: black;
+}
+
+#icon {
+    /* background-color: rebeccapurple; */
+    margin-top: 5px;
 }
