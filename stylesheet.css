@@ -27,7 +27,7 @@ body{
     display: flex;
     align-items: flex-start;
     background-color: var(--light-gray);
-    height: 300px;
+    height: max-content;
     width: 600px;
     border-radius: 5px;
     box-shadow: 0 10px 6px -6px;
@@ -61,7 +61,7 @@ body{
     /* background-color: blueviolet; */
     padding-left: 35px;
     padding-right: 35px;
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
 #inputField input{
@@ -72,16 +72,78 @@ body{
     padding-top: 5px;
     padding-bottom: 5px;
     border: 0;
-    border-radius: 5px;
+    /* border-radius: 5px; */
     border-bottom: 1px solid #747474;
+    box-sizing: border-box;
     font-family: 'Rubik', sans-serif;
     font-size: 14px;
+    transition: all 0.3s;
 }
+
+#inputField input:focus{
+    border-bottom: 1px solid black;
+    border-radius: 5px;
+}
+
+#inputSignIn{
+    padding-left: 35px;
+    padding-right: 35px;
+    margin-top: 30px;
+}
+
+#inputSignIn input{
+    cursor: pointer;
+    margin: auto;
+    background-color: var(--cultured);
+    width: 100%;
+    display: block;
+    outline: none;
+    padding: 0.75rem;
+    border: 1px solid #747474;
+    border-radius: 3px;
+    inline-size: 100%;
+    font-family: 'Rubik', sans-serif;
+    font-size: 14px;
+    transition: all 0.3s;
+    text-transform: uppercase;
+}
+
+#inputSignIn input:hover{
+    background-color: var(--davys-grey);
+    color: var(--cultured);
+}
+
+#loginForm p{
+    font-size: .65em;
+    padding-left: 35px;
+    margin-bottom: 2rem;
+    color: var(--davys-grey);
+}
+
+#loginForm a{
+    text-decoration: none;
+    outline: none;
+    color: var(--davys-grey);
+    font-weight: 800;
+}
+
+#loginForm a:visited{
+    color: var(--davys-grey);
+}
+
+#loginForm a:hover{
+    color: black;
+}
+
+/* credit */
 
 #logoCompany{
     height: 100%;
     width: 300px;
-    background-color: blue;
+    /* background-color: blue; */
+    background-image: url(assets/your-image.jpg);
+    background-repeat: no-repeat;
+    background-position: -350px -30px;
 }
 
 #credit{
