@@ -135,6 +135,12 @@ body{
     color: black;
 }
 
+#loginForm #wrong{
+    color: red;
+    font-size: 0.7em;
+    font-weight: 800;
+}
+
 /* logo */
 
 #logoCompany{
@@ -213,4 +219,81 @@ body{
 #icon {
     /* background-color: rebeccapurple; */
     margin-top: 5px;
+}
+
+/* responsive */
+
+@media screen and (max-width: 600px) {
+    #container{
+        display: flex;
+        background-color: var(--light-gray);
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        flex-flow: column;
+    }
+
+    #wrapper{
+        display: flex;
+        align-items: flex-start;
+        background-color: var(--cultured);
+        height: max-content;
+        width: 80%;
+        border-radius: 5px;
+        box-shadow: 0 10px 6px -6px;
+        justify-content: center;
+        flex-flow: column-reverse;
+    }
+
+    #loginForm{
+        background-color: var(--cultured);
+        height: max-content;
+        width: 100%;
+        border-radius: 5px;
+    }
+
+    #loginForm h1{
+        padding: 35px 35px 0 35px;
+        margin: 0;
+        font-weight: 500;
+        display: block;
+    }
+
+    #logoCompany{
+        height: 100%;
+        width: 100%;
+        background-image: url(assets/your-image.jpg);
+        background-repeat: no-repeat;
+        background-position: -300px -30px;
+    }
+
+    #opacity{
+        border-radius: 5px;
+    }
+
+    #opacity img{
+        width: 80px;
+        height: 80px;
+        margin-top: 1.5em;
+        margin-bottom: 1em;
+    }
+
+    #opacity p{
+        font-weight: 500;
+        color: white;
+        font-size: 1.25em;
+        display: inline-block;
+    }
+
+    #credit p{
+        font-size: 0.8em;
+    }
+
+    #loginForm p#wrong{
+        margin-bottom: 0;
+    }
+
+    #loginForm #inputSignIn{
+        margin-top: 15px;
+    }
 }
